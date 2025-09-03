@@ -5,7 +5,8 @@ from datetime import datetime, timedelta
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import Command
 import asyncpg
-from deepseek import DeepSeekClient
+from deepseek_sdk import DeepSeekClient
+
 
 # Загружаем секретные ключи из переменных окружения
 BOT_TOKEN = os.getenv("BOT_TOKEN")
